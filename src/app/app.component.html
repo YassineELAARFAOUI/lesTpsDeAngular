@@ -1,0 +1,19 @@
+
+
+
+<main class="main">
+  <app-form-student (studentCreated)="onStudentCreated($event)"></app-form-student>
+  <app-header></app-header>
+  <app-body-card [student]="student" ></app-body-card>
+  <!--
+  <div *ngIf="student">
+    <h3>Student Details</h3>
+    <p>Name: {{ student?.name }}</p>
+    <p>Establishment: {{ student?.establishment }}</p>
+    <p>Matricule: {{ student?.matricule }}</p>
+    <p>Matricule Bank: {{ student?.matriculeBank }}</p>
+   
+  </div>
+   -->
+</main>
+<router-outlet />
