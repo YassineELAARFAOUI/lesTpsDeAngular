@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" [(ngModel)]="student.name" name="name" required />
+
+  <label for="establishment">Establishment:</label>
+  <select id="establishment" [(ngModel)]="student.establishment" name="establishment" required>
+    <option *ngFor="let etablissement of etablissements" [value]="etablissement.IdEtab">
+      {{ etablissement.EtabName }}
+    </option>
+  </select>
+  <ng-template #noEstablishments>
+    <p>No establishments available.</p>
+  </ng-template>
+
+  <label for="matricule">Matricule:</label>
+  <input id="matricule" [(ngModel)]="student.matricule" name="matricule" required />
+
+  <label for="matriculeBank">Matricule Bank:</label>
+  <input id="matriculeBank" [(ngModel)]="student.matriculeBank" name="matriculeBank" required />
+
+  <button type="submit">Submit</button>
+</form>

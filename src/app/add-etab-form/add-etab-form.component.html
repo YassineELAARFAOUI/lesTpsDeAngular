@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSumbit()">
+    <label for="idEtab">Id of Establishment:</label>
+    <input id="idEtab" [(ngModel)]="etblissement.IdEtab" name="name" required>
+  
+    <label for="EtabName">Name of Establishment:</label>
+    <input id="EtabName" [(ngModel)]="etblissement.EtabName" name="name" required>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
