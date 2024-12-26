@@ -1,0 +1,8 @@
+<h2>Liste des Étudiants</h2>
+<ul>
+  <li *ngFor="let etudiant of etudiants">
+    {{ etudiant.nom }} {{ etudiant.prenom }} (ID: {{ etudiant.id }}) (ID: {{ etudiant.numeroEtudiant}})
+    <br>
+    Établissement: {{ getEtablissement(etudiant.idEtablissement!) }}
+  </li>
+</ul>

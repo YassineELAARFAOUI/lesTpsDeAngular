@@ -1,0 +1,79 @@
+/* App Container */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Router Outlet */
+  router-outlet {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Additional Styling */
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
